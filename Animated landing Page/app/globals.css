@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 114 100% 54%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 114 100% 54%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 9%;
+    --input: 0 0% 9%;
+    --ring: 114 100% 54%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 114 100% 54%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 114 100% 54%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 9%;
+    --input: 0 0% 9%;
+    --ring: 114 100% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.neon-text {
+  text-shadow: 0 0 5px #39ff14, 0 0 15px #39ff14, 0 0 20px #39ff14;
+}
+
+.neon-border {
+  box-shadow: 0 0 5px #39ff14, 0 0 15px #39ff14;
+}
+
+.neon-glow {
+  filter: drop-shadow(0 0 5px #39ff14);
+}
+
+.grid-background {
+  background-image: linear-gradient(rgba(57, 255, 20, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(57, 255, 20, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
